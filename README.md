@@ -1,1 +1,0 @@
-# minnehack2023
