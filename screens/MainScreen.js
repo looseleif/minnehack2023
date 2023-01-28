@@ -1,11 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
+import { Camera, CameraType } from 'expo-camera';
 
 const HomeScreen = () => {
-    // render the map view with current location marker
     return (
       <View style={styles.container}>
-        <Text>Welcome to the app! this is mainscreen</Text>
+        <Camera 
+          style={{flex:1}}
+          type={CameraType.back}
+        />
       </View>
     )
   }
@@ -16,9 +19,6 @@ const HomeScreen = () => {
 const styles = StyleSheet.create({
     // container style for the main view
     container: {
-        backgroundColor: 'white',
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
+        flex:1
     },
 });
