@@ -1,0 +1,9 @@
+{
+    "question": "What does amendment 8 do?:",
+    "answers": [
+        { "text": "this is a trick question", "isCorrect": false },
+        { "text": "freedom of expression", "isCorrect": false },
+        { "text": "The punishment fits the crime", "isCorrect": true },
+        { "text": "the right to stay silent", "isCorrect": false }
+    ]
+}
