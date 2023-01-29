@@ -1,16 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { View, ScrollView, StyleSheet, TouchableOpacity, Text } from 'react-native';
+import { View, ScrollView, StyleSheet, TouchableOpacity, Text, Image } from 'react-native';
 import useGlobalNavigation from '../assets/components/Navigation';
+import inventory from '../assets/components/Inventory';
+
 
 const InventoryScreen = () => {
 
     const navigation = useGlobalNavigation();
-    const [items, setItems] = useState([]);
-  
-    useEffect(() => {
-      setItems([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]);
-    }, []);
-  
+    
     return (
       <View style={styles.container}>
         <View style={styles.topBar}>
@@ -18,8 +15,10 @@ const InventoryScreen = () => {
         </View>
         <ScrollView>
           <View style={styles.itemsContainer}>
-            {items.map((item, index) => (
-              <View key={index} style={styles.itemBox} />
+            {inventory.items.map((item, index) => (
+              <View key={index} style={styles.itemBox}>
+                <Image source={item.image} style={styles.itemImage} />
+              </View>
             ))}
           </View>
         </ScrollView>
@@ -61,6 +60,11 @@ const InventoryScreen = () => {
       height: 50,
       backgroundColor: '#f1f1f1',
       margin: 10,
+    },
+    itemImage: {
+      width: '100%',
+      height: '100%',
+      resizeMode: 'contain',
     },
     buttonContainer: {
         position: 'absolute',
