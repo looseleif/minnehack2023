@@ -3,7 +3,7 @@
     "answers": [
         { "text": "the right to bear arms", "isCorrect": false },
         { "text": "The right to wear a hat", "isCorrect": false },
-        { "text": "The right to a speed trial", "isCorrect": true },
+        { "text": "The right to a speedy trial", "isCorrect": true },
         { "text": "The right to a trial", "isCorrect": false }
     ]
 }
