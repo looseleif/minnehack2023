@@ -1,9 +1,11 @@
-import { StyleSheet, Text, View, Image,ImageBackground } from 'react-native';
+import { StyleSheet, Text, View, Image,ImageBackground, Button } from 'react-native';
 import React from 'react';
 import prof from "../assets/icons/prof.png";
 import caphill from "../assets/icons/backgroundSplash.png"
 import inventory from "../assets/icons/inventory.png"
+import useGlobalNavigation from '../assets/components/Navigation';
 const CongratsScreen = () => {
+  const Navigation = useGlobalNavigation();
 
     let curAmendmentnum = 0;
     let curAmendment = ''
@@ -29,8 +31,10 @@ const CongratsScreen = () => {
 
                 </View>
                 <Image style={styles.imagebag} source={inventory}/>
-                <Text style={styles.Touch}> Touch! </Text>
-            
+                <Button
+                            title="Go find out about the next amendment"
+                            onPress={() => Navigation.navigate("Main")} 
+                        />
                 <Text style={styles.Texting}>
             
         
