@@ -6,6 +6,8 @@ import HomeScreen from './screens/HomeScreen';
 import InventoryScreen from './screens/InventoryScreen';
 import QuizScreen from './screens/QuizScreen';
 import { Camera } from 'expo-camera';
+import { Accelerometer } from 'expo-sensors';
+import { Audio } from 'expo-av';
 
 const Stack = createStackNavigator();
 
