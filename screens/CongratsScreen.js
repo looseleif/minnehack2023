@@ -1,12 +1,9 @@
-import { StyleSheet, Text, View, Image,ImageBackground, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Image,ImageBackground } from 'react-native';
 import React from 'react';
-import prof from "../assets/icons/prof.png";
-import caphill from "../assets/icons/backgroundSplash.png"
-import inventory from "../assets/icons/inventory.png"
-import useGlobalNavigation from '../assets/components/Navigation';
-
+import prof from "../assets/prof.png";
+import caphill from "../assets/backgroundSplash.png"
+import inventory from "../assets/inventory.png"
 const DebriefScreen = () => {
-    const navigation = useGlobalNavigation();
 
     let curAmendmentnum = 0;
     let curAmendment = ''
@@ -27,18 +24,11 @@ const DebriefScreen = () => {
                 <View style={styles.buffer}/>
                 <View style={styles.bubble}/>
                 <View style={styles.select}>
-                <TouchableOpacity 
-                style={styles.button}
-                onPress={() => navigation.navigate("Catch")}
-      >
-                <Text style={styles.Touch}>Lets go Catch</Text>
-                </TouchableOpacity>
                 
 
-                </View> 
+                </View>
                 <Image style={styles.imagebag} source={inventory}/>
-                <Text style={styles.Touch}> Lets go Catch ! </Text>
-                
+                <Text style={styles.Touch}> Touch! </Text>
             
                 <Text style={styles.Texting}>
             
