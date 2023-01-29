@@ -4,6 +4,7 @@ import { Camera, CameraType } from 'expo-camera';
 import useGlobalNavigation from '../assets/components/Navigation';
 import billBall from '../assets/icons/billBall.png';
 import { gameloopVariable } from '../assets/components/GameloopVariable';
+
 import QuestionFile1 from '../assets/quizComponents/question1.json';
 import QuestionFile2 from '../assets/quizComponents/question2.json';
 import QuestionFile3 from '../assets/quizComponents/question3.json';
