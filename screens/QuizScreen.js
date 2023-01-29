@@ -23,18 +23,19 @@ const QuizScreen = () => {
 
   return (
     <View style={styles.container}>
-    <View style={styles.cameraContainer}>
-        <Camera 
-        style={styles.camera}
-        type={CameraType.back}
-        />
-        <Image
-        style={[styles.image, {transform: [{rotate: `${billBallRotation}deg`}]}]}
-        source={billBall}
-        />
-    </View>
-    <TopIcons />
+        <View style={styles.cameraContainer}>
+            <Camera 
+            style={styles.camera}
+            type={CameraType.back}
+            />
+            <Image
+            style={[styles.image, {transform: [{rotate: `${billBallRotation}deg`}]}]}
+            source={billBall}
+            />
+        </View>
+        <TopIcons />
         <View style={styles.questionContainer}>
+            <Text style={styles.questionHeader}>The lawmon is resisting! It wants to know...</Text>
             <Text style={styles.questionText}>What is the capital of France?</Text>
             <View style={styles.answerContainer}>
                 <Button title="Paris" />
@@ -74,6 +75,11 @@ const QuizScreen = () => {
         height: '50%',
         alignItems: 'center',
         justifyContent: 'center'
+      },
+      questionHeader: {
+        fontSize: 24,
+        position: 'absolute',
+        top: "10%",
       },
       questionText: {
         fontSize: 24,
