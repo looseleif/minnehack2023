@@ -2,31 +2,33 @@
     "prompt": [
         { "text": "This amendment gives you  the power of  expression. This means the citizens of the United states can freely express their beliefs openly. This is your first mission so please approach carefully. The amendments only befriend people who remember them!", 
            "mon": 0 },
-           
+
         { "text": "This amendment guarantees the right to bear arms. Not actual bear arms silly! This means that people in the United States have the right to own  weapons for protection and hunting. Beware of the bear!", 
            "mon": 1 },
-
-        { "text": "This amendment allows us the right to stay silent in court if a citizen doesn’t want to testify. Don’t be mad if this one doesn’t respond to you he’s kind of a mute. Remember kids, better call saul!", 
-           "mon": 4 },
-         { "text": "This amendment doesn’t allow the government to force people to let soldiers stay in their homes without their permission. How would you feel if your friend barged into your house without permission? ", 
-           "mon": 3 },
-           { "text": "This amendment protects your home from being investigated by policeman without a good reason via a permission slip made by a judge. This one has high defensive. ", 
+           
+        { "text": "This amendment protects your home from being investigated by policeman without a good reason via a permission slip made by a judge. This one has high defensive. ", 
            "mon": 2 },
-           { "text": "This amendment allows us the right to stay silent in court if a citizen doesn’t want to testify. Don’t be mad if this one doesn’t respond to you he’s kind of a mute./ Remember kids, better call saul!", 
-           "mon": 5 },
 
-           { "text": "this amendment makes sure court trials happen within a reasonable amount of time, the right of  a trial in a jury, and to have a lawyer. This one blends in by looking like two different people. Be careful this ones fast and furious.", 
-           "mon": 6 },
-           { "text": "this amendment gives you the right to be tried in civil cases.", 
-           "mon": 7 },
-           { "text": "This amendment makes sure the punishment matches the crime. If you don’t do the time you shouldn’t have done the crime.", 
-           "mon": 8 },
-           { "text": "This amendment says that the constitution doesn’t have all the rights and doesn’t take away from those rights. ", 
-           "mon": 9 },
-           { "text": "This amendment gives powers that government and state don’t have to the people. Be careful this amendment has the powerrrrr!!!", 
-           "mon": 10 }
+        { "text": "This amendment doesn’t allow the government to force people to let soldiers stay in their homes without their permission. How would you feel if your friend barged into your house without permission? ", 
+           "mon": 3 },
 
+        { "text": "This amendment allows us the right to stay silent in court if a citizen doesn’t want to testify. Don’t be mad if this one doesn’t respond to you he’s kind of a mute./ Remember kids, better call saul!", 
+           "mon": 4 },
 
+        { "text": "this amendment makes sure court trials happen within a reasonable amount of time, the right of  a trial in a jury, and to have a lawyer. This one blends in by looking like two different people. Be careful this ones fast and furious.", 
+            "mon": 5 },
+
+        { "text": "this amendment gives you the right to be tried in civil cases.", 
+            "mon": 6 },
+
+        { "text": "This amendment makes sure the punishment matches the crime. If you don’t do the time you shouldn’t have done the crime.", 
+            "mon": 7 },
+
+        { "text": "This amendment says that the constitution doesn’t have all the rights and doesn’t take away from those rights. ", 
+            "mon": 8 },
+
+        { "text": "This amendment gives powers that government and state don’t have to the people. Be careful this amendment has the powerrrrr!!!", 
+            "mon": 9 }
 
     ]
 }
