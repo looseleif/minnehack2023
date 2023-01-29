@@ -56,7 +56,7 @@ const QuizScreen = () => {
         </View>
         <View style={styles.questionContainer}>
             
-              <Text style={styles.questionHeader}>The wild JUDICIMON is curious!
+              <Text style={styles.questionHeader}>The wild GOVERNMON is curious!
               </Text>
               <Text style={styles.questionText}>{questionFiles[gameloopVariable].question}</Text>
             
