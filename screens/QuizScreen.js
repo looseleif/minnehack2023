@@ -1,12 +1,18 @@
-import { StyleSheet, View, Image, Text, Button } from 'react-native';
+import { StyleSheet, View, Image, Text, Button, FlatList } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import { Camera, CameraType } from 'expo-camera';
 import useGlobalNavigation from '../assets/components/Navigation';
 import TopIcons from '../assets/components/TopIcons';
 import billBall from '../assets/icons/billBall.png';
+import QuestionFile1 from '../assets/quizComponents/question1.json';
+import QuestionFile2 from '../assets/quizComponents/question2.json';
+import QuestionFile3 from '../assets/quizComponents/question3.json';
+
 
 const QuizScreen = () => {
   const navigation = useGlobalNavigation();
+
+  const questionFiles = [QuestionFile1, QuestionFile2, QuestionFile3]
 
   const [billBallRotation, setBillBallRotation] = useState(25);
 
@@ -24,10 +30,7 @@ const QuizScreen = () => {
   return (
     <View style={styles.container}>
         <View style={styles.cameraContainer}>
-            <Camera 
-            style={styles.camera}
-            type={CameraType.back}
-            />
+            <Camera style={styles.camera} type={CameraType.back} />
             <Image
             style={[styles.image, {transform: [{rotate: `${billBallRotation}deg`}]}]}
             source={billBall}
@@ -36,13 +39,20 @@ const QuizScreen = () => {
         <TopIcons />
         <View style={styles.questionContainer}>
             <Text style={styles.questionHeader}>The lawmon is resisting! It wants to know...</Text>
-            <Text style={styles.questionText}>What is the capital of France?</Text>
-            <View style={styles.answerContainer}>
-                <Button title="Paris" />
-                <Button title="Berlin" />
-                <Button title="London" />
-                <Button title="Rome" />
-            </View>
+            <Text style={styles.questionText}>{questionFiles[0].question}</Text>
+            <FlatList
+                data={questionFiles[0].answers}
+                contentContainerStyle={{ alignItems: 'center', justifyContent: 'center'}}
+                keyExtractor={(item, index) => index.toString()}
+                renderItem={({ item }) => (
+                    <View style={styles.answerContainer}>
+                        <Button
+                            title={item.text}
+                            /*onPress={() => /*handleAnswerPress(item.isCorrect)   BUILD OUT HANDLEANSWERPRESS IS CORRECt} */
+                        />
+                    </View>
+                )}
+            />
         </View>
     </View>
     )
@@ -74,7 +84,7 @@ const QuizScreen = () => {
         backgroundColor: 'white',
         height: '50%',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
       },
       questionHeader: {
         fontSize: 24,
@@ -83,13 +93,13 @@ const QuizScreen = () => {
       },
       questionText: {
         fontSize: 24,
-        padding: 20
+        padding: 20,
+        position: 'absolute',
+        top: "20%",
       },
       answerContainer: {
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        width: '100%',
-        padding: 10
-      }
+        width: '90%',
+        padding: 10,
+      },
   
   })

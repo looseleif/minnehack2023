@@ -1,0 +1,9 @@
+{
+    "question": "The 1st amendment allows you to:",
+    "answers": [
+        { "text": "curse freely at your parents", "isCorrect": false },
+        { "text": "enjoy freedom of expression", "isCorrect": true },
+        { "text": "scream fire when there is no fire in a movie theater", "isCorrect": false },
+        { "text": "discriminate against anyone around you", "isCorrect": false }
+    ]
+}

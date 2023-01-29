@@ -1,5 +1,5 @@
-import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
-import React from 'react';
+import { StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native';
+import React, { useEffect, useState } from 'react';
 import { Camera, CameraType } from 'expo-camera';
 import useGlobalNavigation from '../assets/components/Navigation';
 import TopIcons from '../assets/components/TopIcons';
@@ -9,10 +9,7 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Camera 
-        style={styles.camera}
-        type={CameraType.back}
-      />
+      <Camera style={styles.camera} type={CameraType.back}/>
       <TouchableOpacity 
         style={styles.button}
         onPress={() => navigation.replace('Quiz')}
@@ -47,6 +44,10 @@ const HomeScreen = () => {
       color: 'white',
       fontWeight: 'bold',
       fontSize: 30,
+    },
+    backgroundSplash: {
+      alignSelf: 'center',
+      justifyContent: 'center'
     }
   
   })

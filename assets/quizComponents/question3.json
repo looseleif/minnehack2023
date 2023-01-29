@@ -1,0 +1,9 @@
+{
+    "question": "This amendment states that you cannot be forced to testify against yourself:",
+    "answers": [
+        { "text": "3th amendment", "isCorrect": false },
+        { "text": "4th amendment", "isCorrect": false },
+        { "text": "5th amendment", "isCorrect": true },
+        { "text": "6th amendment", "isCorrect": false }
+    ]
+}
