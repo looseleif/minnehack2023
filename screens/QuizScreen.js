@@ -2,7 +2,6 @@ import { StyleSheet, View, Image, Text, Button, FlatList } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import { Camera, CameraType } from 'expo-camera';
 import useGlobalNavigation from '../assets/components/Navigation';
-import TopIcons from '../assets/components/TopIcons';
 import billBall from '../assets/icons/billBall.png';
 import QuestionFile1 from '../assets/quizComponents/question1.json';
 import QuestionFile2 from '../assets/quizComponents/question2.json';
@@ -46,7 +45,6 @@ const QuizScreen = () => {
             source={billBall}
             />
         </View>
-        <TopIcons />
         <View style={styles.questionContainer}>
             
               <Text style={styles.questionHeader}>The wild JUDICIMON is curious!
@@ -97,7 +95,7 @@ const QuizScreen = () => {
       },
       questionContainer: {
         padding: 5,
-        backgroundColor: 'grey',
+        backgroundColor: 'white',
         height: '35%',
         //flexDirection: 'column',
         //alignItems: 'center',

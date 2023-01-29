@@ -2,7 +2,6 @@ import { StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import { Camera, CameraType } from 'expo-camera';
 import useGlobalNavigation from '../assets/components/Navigation';
-import TopIcons from '../assets/components/TopIcons';
 
 const HomeScreen = () => {
   const navigation = useGlobalNavigation();
@@ -16,7 +15,6 @@ const HomeScreen = () => {
       >
         <Text style={styles.buttonText}>Simulate Catch</Text>
       </TouchableOpacity>
-      <TopIcons />
     </View>
   )
   }

@@ -13,9 +13,12 @@ const TopIcons = () => {
 
   const styles = StyleSheet.create({
     inventoryButton: {
+        width: 50,
+        height: 50,
+        //resizeMode: 'center',
         position: 'absolute',
-        left: 30,
-        top: 60,
+        left: 10,
+        top: 40,
       },
   });
   

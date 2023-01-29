@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, Image,ImageBackground, TouchableOpacity, Button
 import React from 'react';
 import prof from "../assets/icons/prof.png";
 import caphill from "../assets/icons/backgroundSplash.png"
-import inventory from "../assets/icons/inventory.png"
+import TopIcons from '../assets/components/TopIcons';
 import useGlobalNavigation from '../assets/components/Navigation';
 
 const DebriefScreen = () => {
@@ -25,8 +25,6 @@ const DebriefScreen = () => {
                 <Image style={styles.tinyimg} source={prof}/>
 
                 <View style={styles.textbox}/>
-
-                <View style={styles.buffer}/>
                 <View style={styles.bubble}/>
                 <View style={styles.select}>
                 
@@ -36,7 +34,7 @@ const DebriefScreen = () => {
                         />
                 </View>
                  
-                <Image style={styles.imagebag} source={inventory}/>
+                <TopIcons />
                 
 
                 

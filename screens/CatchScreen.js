@@ -2,7 +2,6 @@ import { StyleSheet, View, Image, TouchableOpacity } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import { Camera, CameraType } from 'expo-camera';
 import useGlobalNavigation from '../assets/components/Navigation';
-import TopIcons from '../assets/components/TopIcons';
 import BotIcons from '../assets/components/BotIcons';
 import billBall from '../assets/icons/billBall.png';
 import Mon1 from '../assets/mons/1.png';
@@ -30,7 +29,6 @@ const CatchScreen = () => {
 
           <Image source={mons[0]} style={styles.monStyle} />
 
-        <TopIcons />
         <BotIcons />
     </View>
     )
