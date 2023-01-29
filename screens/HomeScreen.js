@@ -15,7 +15,7 @@ const HomeScreen = () => {
       />
       <TouchableOpacity 
         style={styles.button}
-        onPress={() => navigation.navigate('Quiz')}
+        onPress={() => navigation.replace('Quiz')}
       >
         <Text style={styles.buttonText}>Simulate Quiz</Text>
       </TouchableOpacity>
