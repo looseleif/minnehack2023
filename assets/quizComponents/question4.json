@@ -1,5 +1,5 @@
 {
-    "question": " which amendment protects your home from being investigated by policeman without a good reason:",
+    "question": " Which amendment protects your home from being investigated by policeman without a good reason:",
     "answers": [
         { "text": "3rd amendment", "isCorrect": false },
         { "text": "4th amendment", "isCorrect": true },
