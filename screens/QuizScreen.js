@@ -16,6 +16,14 @@ const QuizScreen = () => {
 
   const [billBallRotation, setBillBallRotation] = useState(25);
 
+  const handleAnswerPress = (isCorrect) => {
+    if (isCorrect) {
+        console.log("correct answer!");
+    } else {
+        console.log("incorrect answer");
+    }
+  }
+
   useEffect(() => {
     const interval = setInterval(() => {
       if (billBallRotation === 25) {
@@ -48,7 +56,7 @@ const QuizScreen = () => {
                     <View style={styles.answerContainer}>
                         <Button
                             title={item.text}
-                            /*onPress={() => /*handleAnswerPress(item.isCorrect)   BUILD OUT HANDLEANSWERPRESS IS CORRECt} */
+                            onPress={() => handleAnswerPress(item.isCorrect)} 
                         />
                     </View>
                 )}
