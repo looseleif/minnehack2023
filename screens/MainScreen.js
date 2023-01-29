@@ -1,67 +1,50 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import React from 'react';
 import { Camera, CameraType } from 'expo-camera';
+import useGlobalNavigation from '../assets/components/Navigation';
 
 const HomeScreen = () => {
-    return (
-      <View style={styles.container}>
-      <Text style={[styles.Start, styles.buttonText]}>Start</Text>
-      <Text style={[styles.options, styles.buttonText]}>options</Text>
-        <Camera 
-          style={{flex:1}}
-          type={CameraType.back}
-        />
-      </View>
-    )
+  const navigation = useGlobalNavigation();
+
+  return (
+    <View style={styles.container}>
+      <Camera 
+        style={styles.camera}
+        type={CameraType.back}
+      />
+      <TouchableOpacity 
+        style={styles.button}
+        onPress={() => navigation.navigate('Inventory')}
+      >
+        <Text style={styles.buttonText}>Inventory</Text>
+      </TouchableOpacity>
+    </View>
+  )
   }
   
   export default HomeScreen;
 
   const styles = StyleSheet.create({
-        // container style for the main view
-        container: {
-          flex:1
-      },
-    Start: 
-    {
-      position: 'absolute',
-      top: 0,
-      middle: 1,
-      bottom: 0,
-      left: 0,
-      right: 0,
-     //alignItems: 'center',
-      color: "blue",
-      
-      opacity: 1.0,
-      //width: '100%',
-      //height: '10%',
-      backgroundColor: "red",
-      borderTopColor: 'rgba(0, 0, 0, 0.3)',
+    // container style for the main view
+    container: {
+      flex:1
     },
-    options: 
-    {
+    button: {
       position: 'absolute',
       top: 0,
-      middle: 1,
-      bottom: 0,
       left: 0,
       right: 0,
-     //alignItems: 'center',
-      color: "blue",
-      
-      opacity: 1.0,
-      //width: '100%',
-      height: '95%',
-      backgroundColor: "red",
-      borderTopColor: 'rgba(0, 0, 0, 0.3)',
+      bottom: 0,
+      alignItems: 'center',
+      justifyContent: 'center',
     },
     buttonText: {
       color: 'white',
-      fontWeight: '400',
-      fontSize: 16,
-      
-  },
-  
+      fontWeight: 'bold',
+      fontSize: 30,
+    },
+    camera: {
+      flex: 1,
+    }
   
   })
