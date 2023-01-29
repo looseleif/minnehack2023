@@ -16,8 +16,6 @@ const DebriefScreen = () => {
 
       }
 
-
-
     return (
         <View style={styles.container}>
                 <ImageBackground source={caphill} resizeMode="cover" style={styles.image}>
