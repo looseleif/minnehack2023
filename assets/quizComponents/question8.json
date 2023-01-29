@@ -3,7 +3,7 @@
     "answers": [
         { "text": "this is a trick question", "isCorrect": false },
         { "text": "freedom of expression", "isCorrect": false },
-        { "text": "The punishment fits the crime", "isCorrect": true },
+        { "text": "Bars unusual punishment", "isCorrect": true },
         { "text": "the right to stay silent", "isCorrect": false }
     ]
 }
