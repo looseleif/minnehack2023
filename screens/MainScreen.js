@@ -1,12 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { Camera, CameraType } from 'expo-camera';
-import { KeyboardAvoidingView, StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 
 const HomeScreen = () => {
     return (
       <View style={styles.container}>
-      <Text style={[styles.start, styles.buttonText]}>Start</Text>
+      <Text style={[styles.Start, styles.buttonText]}>Start</Text>
       <Text style={[styles.options, styles.buttonText]}>options</Text>
         <Camera 
           style={{flex:1}}
