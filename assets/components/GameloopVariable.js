@@ -1,5 +1,5 @@
 export let gameloopVariable = 0;
 
-export const incrementGlobalVariable = () => {
+export const incrementGameloopVariable = () => {
   gameloopVariable += 1;
 }
