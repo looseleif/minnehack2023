@@ -1,5 +1,5 @@
-export let gameloopVariable = 0;
+export let gameloopVariable = incrementGameloopVariable();
 
 export const incrementGameloopVariable = () => {
-  gameloopVariable += 1;
+  gameloopVariable = (Math.round(Math.random()*100))%10;
 }
