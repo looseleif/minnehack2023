@@ -2,10 +2,14 @@ import { StyleSheet, Text, View, Image,ImageBackground, Button } from 'react-nat
 import React from 'react';
 import prof from "../assets/icons/prof.png";
 import caphill from "../assets/icons/backgroundSplash.png"
+<<<<<<< Updated upstream
 import inventory from "../assets/icons/inventory.png"
 import useGlobalNavigation from '../assets/components/Navigation'
 import globalGameLoop, { incrementGameloopVariable } from '../assets/components/GameloopVariable'
 
+=======
+import useGlobalNavigation from '../assets/components/Navigation';
+>>>>>>> Stashed changes
 const CongratsScreen = () => {
   const Navigation = useGlobalNavigation();
 
@@ -26,13 +30,11 @@ const CongratsScreen = () => {
                 <ImageBackground source={caphill} resizeMode="cover" style={styles.image}>
                 <Image style={styles.tinyimg} source={prof}/>
                 <View style={styles.textbox}/>
-                <View style={styles.buffer}/>
                 <View style={styles.bubble}/>
                 <View style={styles.select}>
                 
 
                 </View>
-                <Image style={styles.imagebag} source={inventory}/>
                 <Button
                             title="Go find out about the next amendment"
                             onPress={() => {Navigation.navigate("Main"); incrementGameloopVariable()}} 
@@ -160,14 +162,5 @@ Touch:
     color: "yellow",
     fontWeight: '500',
 },
-imagebag: {
-    width: 50,
-    height: 50,
-    //resizeMode: 'center',
-    position: 'absolute',
-    left: 10,
-    top: 40,
-  },
-
 
 })
