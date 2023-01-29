@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View, Image,ImageBackground } from 'react-native';
 import React from 'react';
-import prof from "../assets/prof.png";
-import caphill from "../assets/backgroundSplash.png"
-import inventory from "../assets/inventory.png"
+import prof from "../assets/icons/prof.png";
+import caphill from "../assets/icons/backgroundSplash.png"
+import inventory from "../assets/icons/inventory.png"
 const CongratsScreen = () => {
 
     let curAmendmentnum = 0;
@@ -11,7 +11,7 @@ const CongratsScreen = () => {
     let caught = false
     let congrats = ["Good job you caught the amendment! Lets go see what the next amendment Professor Washington wants to give us.","You caught all the amendments! Now you know that you have rights! I have a secret. I am secertly George Washingtons Decendent. On behalf of him i than you."]
     let i = 0
-    if (storeAmend[i] == 10){
+    if (congrats[i] == 10){
         congrats[i] += 1
         
 
@@ -47,11 +47,10 @@ const CongratsScreen = () => {
 // red border blue background white text
 
 }
-export default DebriefScreen;
+export default CongratsScreen;
 
 const styles = StyleSheet.create({
     Texting: {
-        fontFamily: 'sans-serif',
         bottom: -150,
         //middle: -250,
         textAlign: 'center',
@@ -148,7 +147,6 @@ select:
 },
 Touch:
 {
-    fontFamily: 'sans-serif',
     bottom: -345,
     //middle: -250,
     textAlign: 'center',

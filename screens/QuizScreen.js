@@ -19,8 +19,10 @@ const QuizScreen = () => {
   const handleAnswerPress = (isCorrect) => {
     if (isCorrect) {
         console.log("correct answer!");
+        navigation.navigate("Congrats");
     } else {
         console.log("incorrect answer");
+        navigation.navigate("Catch");
     }
   }
 

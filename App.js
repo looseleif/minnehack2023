@@ -7,6 +7,7 @@ import InventoryScreen from './screens/InventoryScreen';
 import QuizScreen from './screens/QuizScreen';
 import CatchScreen from './screens/CatchScreen';
 import DebriefScreen from './screens/DebriefScreen';
+import CongratsScreen from './screens/CongratsScreen';
 import { Camera } from 'expo-camera';
 import { Accelerometer } from 'expo-sensors';
 import { Audio } from 'expo-av';
@@ -36,6 +37,7 @@ export default function App() {
         <Stack.Screen name="Inventory" component={InventoryScreen}/>
         <Stack.Screen name="Catch" component={CatchScreen}/>
         <Stack.Screen name="Quiz" component={QuizScreen}/>
+        <Stack.Screen name="Congrats" component={CongratsScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
