@@ -3,19 +3,20 @@ import React from 'react';
 import prof from "../assets/prof.png";
 import caphill from "../assets/backgroundSplash.png"
 import inventory from "../assets/inventory.png"
-const DebriefScreen = () => {
+const CongratsScreen = () => {
 
     let curAmendmentnum = 0;
     let curAmendment = ''
-    let storeAmend = ["This amendment gives you  the power of  expression. This means the citizens of the United states can freely express their beliefs openly. This is your first mission so please approach carefully. The amendments only befriend people who remember them!", " This amendment guarantees the right to bear arms. Not actual bear arms silly! This means that people in the United States have the right to own  weapons for protection and hunting. Beware of the bear!", "This amendment allows us the right to stay silent in court if a citizen doesn’t want to testify. Don’t be mad if this one doesn’t respond to you he’s kind of a mute. Remember kids, better call saul!"]
+    //let storeAmend = ["This amendment gives you  the power of  expression. This means the citizens of the United states can freely express their beliefs openly. This is your first mission so please approach carefully. The amendments only befriend people who remember them!", " This amendment guarantees the right to bear arms. Not actual bear arms silly! This means that people in the United States have the right to own  weapons for protection and hunting. Beware of the bear!", "This amendment allows us the right to stay silent in court if a citizen doesn’t want to testify. Don’t be mad if this one doesn’t respond to you he’s kind of a mute. Remember kids, better call saul!"]
     let caught = false
+    let congrats = ["Good job you caught the amendment! Lets go see what the next amendment Professor Washington wants to give us.","You caught all the amendments! Now you know that you have rights! I have a secret. I am secertly George Washingtons Decendent. On behalf of him i than you."]
     let i = 0
-    if (caught == true){
-        storeAmend[i] += 1
-
+    if (storeAmend[i] == 10){
+        congrats[i] += 1
+        
 
       }
-
+    
     return (
         <View style={styles.container}>
                 <ImageBackground source={caphill} resizeMode="cover" style={styles.image}>
@@ -35,7 +36,7 @@ const DebriefScreen = () => {
         
         
            
-                    {storeAmend[i]} 
+                    {congrats[i]} 
 
                 </Text>
                 </ImageBackground>
