@@ -7,12 +7,19 @@ import { gameloopVariable } from '../assets/components/GameloopVariable';
 import QuestionFile1 from '../assets/quizComponents/question1.json';
 import QuestionFile2 from '../assets/quizComponents/question2.json';
 import QuestionFile3 from '../assets/quizComponents/question3.json';
+import QuestionFile4 from '../assets/quizComponents/question4.json';
+import QuestionFile5 from '../assets/quizComponents/question5.json';
+import QuestionFile6 from '../assets/quizComponents/question6.json';
+import QuestionFile7 from '../assets/quizComponents/question7.json';
+import QuestionFile8 from '../assets/quizComponents/question8.json';
+import QuestionFile9 from '../assets/quizComponents/question9.json';
+import QuestionFile10 from '../assets/quizComponents/question10.json';
 
 
 const QuizScreen = () => {
   const navigation = useGlobalNavigation();
 
-  const questionFiles = [QuestionFile1, QuestionFile2, QuestionFile3]
+  const questionFiles = [QuestionFile1, QuestionFile2, QuestionFile3, QuestionFile4, QuestionFile5, QuestionFile6, QuestionFile7, QuestionFile8, QuestionFile9, QuestionFile10]
 
   const [billBallRotation, setBillBallRotation] = useState(25);
 
