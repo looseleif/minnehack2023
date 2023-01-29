@@ -23,7 +23,7 @@ const CongratsScreen = () => {
                 </View>
                 <Button
                             title="Go find out about the next amendment"
-                            onPress={() => {Navigation.navigate("Main"); incrementGameloopVariable()}} 
+                            onPress={() => {Navigation.replace("Main"); incrementGameloopVariable()}} 
                         />
                 <Text style={styles.Texting}>
             
