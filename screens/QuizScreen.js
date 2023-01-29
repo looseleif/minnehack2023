@@ -30,7 +30,7 @@ const QuizScreen = () => {
         navigation.navigate("Congrats");
     } else {
         console.log("incorrect answer");
-        navigation.navigate("Catch");
+        navigation.replace("Catch");
     }
   }
 
