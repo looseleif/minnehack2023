@@ -13,11 +13,6 @@ import Mon5 from '../assets/mons/5.png';
 const CatchScreen = () => {
   const navigation = useGlobalNavigation();
 
-  //ball throw navigation function
-  const throwBall = () => {
-    navigation.navigate("Quiz");
-  };
-
   const mons = [Mon1, Mon2, Mon5];
 
   return (
@@ -27,7 +22,7 @@ const CatchScreen = () => {
             {/* replace 0 with index*/}
             <TouchableOpacity 
               style={[styles.image]}
-              onPress={() => throwBall()}
+              onPress={() => navigation.navigate("Quiz")}
             >
               <Image source={billBall} style={[styles.ball]}/>
             </TouchableOpacity>
