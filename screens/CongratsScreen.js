@@ -30,7 +30,7 @@ const CongratsScreen = () => {
         
         
            
-                    {congrats[gameloopVariable]} 
+                    {gameloopVariable === 10 ? congrats[1] : congrats[0]} 
 
                 </Text>
                 </ImageBackground>
