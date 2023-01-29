@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View, Image,ImageBackground } from 'react-native';
 import React from 'react';
-import prof from "../assets/prof.png";
-import caphill from "../assets/backgroundSplash.png"
-import inventory from "../assets/inventory.png"
+import prof from "../assets/icons/prof.png";
+import caphill from "../assets/icons/backgroundSplash.png"
+import inventory from "../assets/icons/inventory.png"
 const DebriefScreen = () => {
 
     let curAmendmentnum = 0;
