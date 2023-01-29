@@ -27,7 +27,7 @@ const InventoryScreen = () => {
                 style={styles.button}
                 onPress={() => navigation.navigate('Main')}
             >
-                <Text style={styles.buttonText}>Back to Home Screen</Text>
+                <Text style={styles.buttonText}>Back to Debreif</Text>
             </TouchableOpacity>
         </View>
 
