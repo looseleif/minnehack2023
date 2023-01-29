@@ -1,4 +1,4 @@
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 import React from 'react';
 import { Camera, CameraType } from 'expo-camera';
 import useGlobalNavigation from '../assets/components/Navigation';
@@ -13,6 +13,12 @@ const HomeScreen = () => {
         style={styles.camera}
         type={CameraType.back}
       />
+      <TouchableOpacity 
+        style={styles.button}
+        onPress={() => navigation.navigate('Quiz')}
+      >
+        <Text style={styles.buttonText}>Simulate Quiz</Text>
+      </TouchableOpacity>
       <TopIcons />
     </View>
   )
@@ -23,10 +29,24 @@ const HomeScreen = () => {
   const styles = StyleSheet.create({
     // container style for the main view
     container: {
-      flex:1
+      flex:1,
     },
     camera: {
       flex: 1,
     },
+    button: {
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    buttonText: {
+      color: 'white',
+      fontWeight: 'bold',
+      fontSize: 30,
+    }
   
   })
