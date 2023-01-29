@@ -1,7 +1,8 @@
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 import React from 'react';
 import { Camera, CameraType } from 'expo-camera';
 import useGlobalNavigation from '../assets/components/Navigation';
+import inventoryIcon from '../assets/icons/inventory.png'
 
 const HomeScreen = () => {
   const navigation = useGlobalNavigation();
@@ -16,7 +17,9 @@ const HomeScreen = () => {
         style={styles.button}
         onPress={() => navigation.navigate('Inventory')}
       >
-        <Text style={styles.buttonText}>Inventory</Text>
+        <Image
+          source={inventoryIcon}
+        />
       </TouchableOpacity>
     </View>
   )
@@ -31,20 +34,11 @@ const HomeScreen = () => {
     },
     button: {
       position: 'absolute',
-      top: 0,
-      left: 0,
-      right: 0,
-      bottom: 0,
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-    buttonText: {
-      color: 'white',
-      fontWeight: 'bold',
-      fontSize: 30,
+      left: 30,
+      top: 60,
     },
     camera: {
       flex: 1,
-    }
+    },
   
   })
