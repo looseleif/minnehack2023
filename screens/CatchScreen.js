@@ -7,7 +7,7 @@ import billBall from '../assets/icons/billBall.png';
 import Mon1 from '../assets/mons/1.png';
 import Mon2 from '../assets/mons/2.png';
 import Mon5 from '../assets/mons/5.png';
-
+import { gameloopVariable } from '../assets/components/GameloopVariable';
 
 const CatchScreen = () => {
   const navigation = useGlobalNavigation();
@@ -27,7 +27,7 @@ const CatchScreen = () => {
             </TouchableOpacity>
         </View>
 
-          <Image source={mons[0]} style={styles.monStyle} />
+          <Image source={mons[gameloopVariable]} style={styles.monStyle} />
 
         <BotIcons />
     </View>

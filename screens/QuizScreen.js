@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Camera, CameraType } from 'expo-camera';
 import useGlobalNavigation from '../assets/components/Navigation';
 import billBall from '../assets/icons/billBall.png';
+import { gameloopVariable } from '../assets/components/GameloopVariable';
 import QuestionFile1 from '../assets/quizComponents/question1.json';
 import QuestionFile2 from '../assets/quizComponents/question2.json';
 import QuestionFile3 from '../assets/quizComponents/question3.json';
@@ -49,10 +50,10 @@ const QuizScreen = () => {
             
               <Text style={styles.questionHeader}>The wild JUDICIMON is curious!
               </Text>
-              <Text style={styles.questionText}>{questionFiles[0].question}</Text>
+              <Text style={styles.questionText}>{questionFiles[gameloopVariable].question}</Text>
             
             <FlatList
-                data={questionFiles[0].answers}
+                data={questionFiles[gameloopVariable].answers}
                 contentContainerStyle={{ alignItems: 'center', justifyContent: 'center'}}
                 keyExtractor={(item, index) => index.toString()}
                 renderItem={({ item }) => (
