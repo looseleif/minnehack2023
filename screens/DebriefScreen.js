@@ -60,7 +60,6 @@ export default DebriefScreen;
 
 const styles = StyleSheet.create({
     Texting: {
-        fontFamily: 'sans-serif',
         bottom: -150,
         //middle: -250,
         textAlign: 'center',
@@ -157,7 +156,6 @@ select:
 },
 Touch:
 {
-    fontFamily: 'sans-serif',
     bottom: -345,
     //middle: -250,
     textAlign: 'center',
