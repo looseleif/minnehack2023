@@ -8,7 +8,7 @@ import { incrementGameloopVariable, gameloopVariable } from '../assets/component
 const CongratsScreen = () => {
   const Navigation = useGlobalNavigation();
 
-    let congrats = ["Good job you caught the amendment! Lets go see what the next amendment Professor Washington wants to give us.",
+    let congrats = ["Good job you caught the amendment! Lets go see what the next amendment Professor Washington wants to give us is.",
     "You caught all the amendments! Now you know that you have rights! I have a secret. I am secertly George Washingtons Decendent. On behalf of him i than you."]
     
     return (
