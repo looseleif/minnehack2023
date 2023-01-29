@@ -7,6 +7,26 @@
            "mon": 1 },
 
         { "text": "This amendment allows us the right to stay silent in court if a citizen doesn’t want to testify. Don’t be mad if this one doesn’t respond to you he’s kind of a mute. Remember kids, better call saul!", 
-           "mon": 2 }
+           "mon": 4 },
+         { "text": "This amendment doesn’t allow the government to force people to let soldiers stay in their homes without their permission. How would you feel if your friend barged into your house without permission? ", 
+           "mon": 3 },
+           { "text": "This amendment protects your home from being investigated by policeman without a good reason via a permission slip made by a judge. This one has high defensive. ", 
+           "mon": 2 },
+           { "text": "This amendment allows us the right to stay silent in court if a citizen doesn’t want to testify. Don’t be mad if this one doesn’t respond to you he’s kind of a mute./ Remember kids, better call saul!", 
+           "mon": 5 },
+
+           { "text": "this amendment makes sure court trials happen within a reasonable amount of time, the right of  a trial in a jury, and to have a lawyer. This one blends in by looking like two different people. Be careful this ones fast and furious.", 
+           "mon": 6 },
+           { "text": "this amendment gives you the right to be tried in civil cases.", 
+           "mon": 7 },
+           { "text": "This amendment makes sure the punishment matches the crime. If you don’t do the time you shouldn’t have done the crime.", 
+           "mon": 8 },
+           { "text": "This amendment says that the constitution doesn’t have all the rights and doesn’t take away from those rights. ", 
+           "mon": 9 },
+           { "text": "This amendment gives powers that government and state don’t have to the people. Be careful this amendment has the powerrrrr!!!", 
+           "mon": 10 }
+
+
+
     ]
 }

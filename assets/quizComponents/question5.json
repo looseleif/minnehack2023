@@ -1,0 +1,9 @@
+{
+    "question": " Which amendment allows a citizen to remain silent if they chose to:",
+    "answers": [
+        { "text": "3rd amendment", "isCorrect": false },
+        { "text": "4th amendment", "isCorrect": false },
+        { "text": "5th amendment", "isCorrect": true },
+        { "text": "6th amendment", "isCorrect": false }
+    ]
+}
