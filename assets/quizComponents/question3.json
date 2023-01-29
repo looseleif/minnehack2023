@@ -1,5 +1,5 @@
 {
-    "question": "Which amendment gives a citizen the right to decline entry into ones house for soldiers:",
+    "question": "Which amendment gives a citizen the right to decline entry into ones house for soldiers :",
     "answers": [
         { "text": "3rd amendment", "isCorrect": true },
         { "text": "4th amendment", "isCorrect": false },
