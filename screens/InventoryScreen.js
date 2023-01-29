@@ -56,8 +56,8 @@ const InventoryScreen = () => {
       paddingTop: 25,
     },
     itemBox: {
-      width: 50,
-      height: 50,
+      width: 100,
+      height: 100,
       backgroundColor: '#f1f1f1',
       margin: 10,
     },

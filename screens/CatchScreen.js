@@ -30,7 +30,7 @@ const CatchScreen = () => {
             {/* replace 0 with index*/}
             <TouchableOpacity 
               style={[styles.image]}
-              onPress={() => navigation.navigate("Quiz")}
+              onPress={() => navigation.replace("Quiz")}
             >
               <Image source={billBall} style={[styles.ball]}/>
             </TouchableOpacity>
