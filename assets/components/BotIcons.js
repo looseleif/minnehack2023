@@ -5,10 +5,8 @@ import backIcon from '../icons/back.png'
  
 const BotIcons = () => {
   const navigation = useGlobalNavigation();
-
-  //handles navigation to inventory screen
-  //TODO: change to "Debrief" screen
-  const handleInventory = () => {
+  
+  const handleReturn = () => {
     navigation.navigate("Main");
   };
 
@@ -23,7 +21,7 @@ const BotIcons = () => {
   return (
     <TouchableOpacity 
     style={styles.inventoryButton}
-    onPress={() => handleInventory()}
+    onPress={() => handleReturn()}
     >
     <Image source={backIcon} style={{maxWidth:80, maxHeight: 80}}/>
     </TouchableOpacity>

@@ -26,10 +26,8 @@ const QuizScreen = () => {
 
   const handleAnswerPress = (isCorrect) => {
     if (isCorrect) {
-        console.log("correct answer!");
-        navigation.navigate("Congrats");
+        navigation.replace("Congrats");
     } else {
-        console.log("incorrect answer");
         navigation.replace("Catch");
     }
   }
@@ -106,29 +104,17 @@ const QuizScreen = () => {
         padding: 5,
         backgroundColor: 'white',
         height: '35%',
-        //flexDirection: 'column',
-        //alignItems: 'center',
-        //justifyContent: 'center',
       },
       questionHeader: {
-
         fontSize: 18,
         textAlign: 'center',
-        //maxWidth: '90%',
-        //position: 'absolute',
-        //top: "10%",
       },
       questionText: {
         fontSize: 18,
         textAlign: 'center',
         padding: 5,
-        //maxWidth: '90%',
-        //position: 'absolute',
-        //top: "20%",
       },
       answerContainer: {
-        //width: '90%',
-        //padding: "40",
         flexDirection: 'row',
         padding: 5
       },
