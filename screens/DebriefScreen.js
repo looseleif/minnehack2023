@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image,ImageBackground, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Image,ImageBackground, TouchableOpacity, Button} from 'react-native';
 import React from 'react';
 import prof from "../assets/icons/prof.png";
 import caphill from "../assets/icons/backgroundSplash.png"
@@ -23,21 +23,22 @@ const DebriefScreen = () => {
         <View style={styles.container}>
                 <ImageBackground source={caphill} resizeMode="cover" style={styles.image}>
                 <Image style={styles.tinyimg} source={prof}/>
+
                 <View style={styles.textbox}/>
+
                 <View style={styles.buffer}/>
                 <View style={styles.bubble}/>
                 <View style={styles.select}>
-                <TouchableOpacity 
-                style={styles.button}
-                onPress={() => navigation.navigate("Catch")}
-      >
-                <Text style={styles.Touch}>Lets go Catch</Text>
-                </TouchableOpacity>
+                
+                <Button
+                            title="Lets catch 'em!"
+                            onPress={() => navigation.navigate("Catch")} 
+                        />
+                </View>
+                 
+                <Image style={styles.imagebag} source={inventory}/>
                 
 
-                </View> 
-                <Image style={styles.imagebag} source={inventory}/>
-                <Text style={styles.Touch}> Lets go Catch ! </Text>
                 
             
                 <Text style={styles.Texting}>
@@ -48,6 +49,7 @@ const DebriefScreen = () => {
                     {storeAmend[i]} 
 
                 </Text>
+                
                 </ImageBackground>
             
 
@@ -164,6 +166,7 @@ Touch:
     fontSize: 20,
     color: "yellow",
     fontWeight: '500',
+    width: 400,
 },
 imagebag: {
     width: 50,
@@ -173,6 +176,10 @@ imagebag: {
     left: 10,
     top: 40,
   },
+  button: {
+    width:4000,
+    height:4000
+  }
 
 
 })
