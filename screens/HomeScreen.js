@@ -12,9 +12,9 @@ const HomeScreen = () => {
       <Camera style={styles.camera} type={CameraType.back}/>
       <TouchableOpacity 
         style={styles.button}
-        onPress={() => navigation.replace('Quiz')}
+        onPress={() => navigation.replace('Catch')}
       >
-        <Text style={styles.buttonText}>Simulate Quiz</Text>
+        <Text style={styles.buttonText}>Simulate Catch</Text>
       </TouchableOpacity>
       <TopIcons />
     </View>

@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View, Image,ImageBackground, TouchableOpacity } from 'react-native';
 import React from 'react';
-import prof from "../assets/icons/prof.png";
-import caphill from "../assets/icons/backgroundSplash.png"
-import inventory from "../assets/icons/inventory.png"
+import prof from "../assets/icons/icons/prof.png";
+import caphill from "../assets/icons/icons/backgroundSplash.png"
+import inventory from "../assets/icons/icons/inventory.png"
 import useGlobalNavigation from '../assets/components/Navigation';
 
 const DebriefScreen = () => {
@@ -18,8 +18,6 @@ const DebriefScreen = () => {
 
 
       }
-
-
 
     return (
         <View style={styles.container}>

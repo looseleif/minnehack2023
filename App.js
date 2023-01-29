@@ -5,6 +5,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './screens/HomeScreen';
 import InventoryScreen from './screens/InventoryScreen';
 import QuizScreen from './screens/QuizScreen';
+import CatchScreen from './screens/CatchScreen';
+import DebriefScreen from './screens/DebriefScreen';
 import { Camera } from 'expo-camera';
 import { Accelerometer } from 'expo-sensors';
 import { Audio } from 'expo-av';
@@ -30,8 +32,9 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
-        <Stack.Screen name="Main" component={HomeScreen}/>
+        <Stack.Screen name="Main" component={DebriefScreen}/>
         <Stack.Screen name="Inventory" component={InventoryScreen}/>
+        <Stack.Screen name="Catch" component={CatchScreen}/>
         <Stack.Screen name="Quiz" component={QuizScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
