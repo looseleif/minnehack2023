@@ -46,8 +46,11 @@ const QuizScreen = () => {
         </View>
         <TopIcons />
         <View style={styles.questionContainer}>
-            <Text style={styles.questionHeader}>The lawmon is resisting! It wants to know...</Text>
-            <Text style={styles.questionText}>{questionFiles[0].question}</Text>
+            
+              <Text style={styles.questionHeader}>The wild JUDICIMON is curious!
+              </Text>
+              <Text style={styles.questionText}>{questionFiles[0].question}</Text>
+            
             <FlatList
                 data={questionFiles[0].answers}
                 contentContainerStyle={{ alignItems: 'center', justifyContent: 'center'}}
@@ -76,6 +79,8 @@ const QuizScreen = () => {
       cameraContainer: {
         flex: 1,
         position: 'relative',
+        textAlign: 'center',
+        padding: 0
       },
       camera: {
         flex: 1,
@@ -89,25 +94,34 @@ const QuizScreen = () => {
         top: '45%',
       },
       questionContainer: {
-        backgroundColor: 'white',
-        height: '50%',
-        alignItems: 'center',
-        justifyContent: 'center',
+        padding: 5,
+        backgroundColor: 'grey',
+        height: '35%',
+        //flexDirection: 'column',
+        //alignItems: 'center',
+        //justifyContent: 'center',
       },
       questionHeader: {
-        fontSize: 24,
-        position: 'absolute',
-        top: "10%",
+
+        fontSize: 18,
+        textAlign: 'center',
+        //maxWidth: '90%',
+        //position: 'absolute',
+        //top: "10%",
       },
       questionText: {
-        fontSize: 24,
-        padding: 20,
-        position: 'absolute',
-        top: "20%",
+        fontSize: 18,
+        textAlign: 'center',
+        padding: 5,
+        //maxWidth: '90%',
+        //position: 'absolute',
+        //top: "20%",
       },
       answerContainer: {
-        width: '90%',
-        padding: 10,
+        //width: '90%',
+        //padding: "40",
+        flexDirection: 'row',
+        padding: 5
       },
   
   })

@@ -3,7 +3,7 @@
     "answers": [
       { "text": "guarantees the right to bear arms.", "isCorrect": true },
       { "text": "allows you to own a bear.", "isCorrect": false },
-      { "text": "permits to wear any t-shirt.", "isCorrect": false },
+      { "text": "lets you wear sleeveless tees", "isCorrect": false },
       { "text": "instantly makes you a great hunter.", "isCorrect": false }
     ]
   }
