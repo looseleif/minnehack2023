@@ -2,14 +2,10 @@ import { StyleSheet, Text, View, Image,ImageBackground, Button } from 'react-nat
 import React from 'react';
 import prof from "../assets/icons/prof.png";
 import caphill from "../assets/icons/backgroundSplash.png"
-<<<<<<< Updated upstream
 import inventory from "../assets/icons/inventory.png"
 import useGlobalNavigation from '../assets/components/Navigation'
-import globalGameLoop, { incrementGameloopVariable } from '../assets/components/GameloopVariable'
+import gameloopVariable, { incrementGameloopVariable } from '../assets/components/GameloopVariable'
 
-=======
-import useGlobalNavigation from '../assets/components/Navigation';
->>>>>>> Stashed changes
 const CongratsScreen = () => {
   const Navigation = useGlobalNavigation();
 
