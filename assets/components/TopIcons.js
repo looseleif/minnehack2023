@@ -8,7 +8,7 @@ const TopIcons = () => {
 
   //handles navigation to inventory screen
   const handleInventory = () => {
-    navigation.navigate("Inventory");
+    navigation.replace("Inventory");
   };
 
   const styles = StyleSheet.create({

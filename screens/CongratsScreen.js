@@ -4,6 +4,31 @@ import prof from "../assets/icons/prof.png";
 import caphill from "../assets/icons/backgroundSplash.png"
 import useGlobalNavigation from '../assets/components/Navigation'
 import { incrementGameloopVariable, gameloopVariable } from '../assets/components/GameloopVariable'
+import inventory from '../assets/components/Inventory';
+
+import Mon1 from '../assets/mons/1.png';
+import Mon2 from '../assets/mons/2.png';
+import Mon3 from '../assets/mons/3.png';
+import Mon4 from '../assets/mons/4.png';
+import Mon5 from '../assets/mons/5.png';
+import Mon6 from '../assets/mons/6.png';
+import Mon7 from '../assets/mons/7.png';
+import Mon8 from '../assets/mons/8.png';
+import Mon9 from '../assets/mons/9.png';
+import Mon10 from '../assets/mons/10.png';
+
+const Mon = {
+  0: Mon1,
+  1: Mon2,
+  2: Mon3,
+  3: Mon4,
+  4: Mon5,
+  5: Mon6,
+  6: Mon7,
+  7: Mon8,
+  8: Mon9,
+  9: Mon10
+}
 
 const CongratsScreen = () => {
   const Navigation = useGlobalNavigation();
@@ -11,6 +36,7 @@ const CongratsScreen = () => {
     let congrats = ["Good job you caught the amendment! Lets go see what the next amendment Professor Washington wants to give us.",
     "You caught all the amendments! Now you know that you have rights! I have a secret. I am secertly George Washingtons Decendent. On behalf of him i than you."]
     
+
     return (
         <View style={styles.container}>
                 <ImageBackground source={caphill} resizeMode="cover" style={styles.image}>
@@ -23,7 +49,11 @@ const CongratsScreen = () => {
                 </View>
                 <Button
                             title="Go find out about the next amendment"
-                            onPress={() => {Navigation.replace("Main"); incrementGameloopVariable()}} 
+                            onPress={() => {
+                              Navigation.replace("Main");
+                              inventory.addMonToInventory(`Mon${gameloopVariable}`, Mon[gameloopVariable]);
+                              incrementGameloopVariable()
+                            }} 
                         />
                 <Text style={styles.Texting}>
             
