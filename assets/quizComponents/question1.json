@@ -1,0 +1,9 @@
+{
+    "question": "The 1st amendment permits that one can:",
+    "answers": [
+        { "text": "use unlicensed copywrite songs for profit", "isCorrect": false },
+        { "text": "enjoy freedom of expression", "isCorrect": true },
+        { "text": "yell fire when none exists in a theater", "isCorrect": false },
+        { "text": "lie under oath in court", "isCorrect": false }
+    ]
+}

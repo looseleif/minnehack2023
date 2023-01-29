@@ -1,9 +1,13 @@
 import * as React from 'react';
-import {useEffect, setState} from 'react';
+import { useEffect, setState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import MainScreen from './screens/MainScreen';
+import HomeScreen from './screens/HomeScreen';
+import InventoryScreen from './screens/InventoryScreen';
+import QuizScreen from './screens/QuizScreen';
 import { Camera } from 'expo-camera';
+import { Accelerometer } from 'expo-sensors';
+import { Audio } from 'expo-av';
 
 const Stack = createStackNavigator();
 
@@ -26,7 +30,9 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
-        <Stack.Screen name="Main" component={MainScreen}/>
+        <Stack.Screen name="Main" component={HomeScreen}/>
+        <Stack.Screen name="Inventory" component={InventoryScreen}/>
+        <Stack.Screen name="Quiz" component={QuizScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

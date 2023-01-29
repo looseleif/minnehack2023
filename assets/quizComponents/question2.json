@@ -1,0 +1,10 @@
+{
+    "question": "The 2nd amendment:",
+    "answers": [
+      { "text": "guarantees the right to bear arms.", "isCorrect": true },
+      { "text": "allows you to own a bear.", "isCorrect": false },
+      { "text": "lets you wear sleeveless tees", "isCorrect": false },
+      { "text": "instantly makes you a great hunter.", "isCorrect": false }
+    ]
+  }
+  
