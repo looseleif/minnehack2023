@@ -35,7 +35,7 @@ const HomeScreen = () => {
       
       opacity: 1.0,
       //width: '100%',
-      //height: '10%',
+      height: '90%',
       backgroundColor: "red",
       borderTopColor: 'rgba(0, 0, 0, 0.3)',
     },
@@ -57,7 +57,7 @@ const HomeScreen = () => {
       borderTopColor: 'rgba(0, 0, 0, 0.3)',
     },
     buttonText: {
-      color: 'white',
+      color: 'black',
       fontWeight: '400',
       fontSize: 16,
       
