@@ -4,6 +4,7 @@ import { Camera, CameraType } from 'expo-camera';
 import useGlobalNavigation from '../assets/components/Navigation';
 import BotIcons from '../assets/components/BotIcons';
 import billBall from '../assets/icons/billBall.png';
+
 import Mon1 from '../assets/mons/1.png';
 import Mon2 from '../assets/mons/2.png';
 import Mon3 from '../assets/mons/3.png';
